@@ -54,8 +54,8 @@ export default function decorate(block) {
   }
 
   // Assemble the hero
-  heroContent.appendChild(heroImage);
   heroContent.appendChild(heroText);
+  heroContent.appendChild(heroImage);
 
   // Clear block and add new structure
   block.textContent = '';

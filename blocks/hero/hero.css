@@ -11,7 +11,7 @@
 
 .hero {
   position: relative;
-  background: #fefce8;
+  background: #1e3a8a;
 }
 
 .hero-content {
@@ -55,7 +55,7 @@
   font-size: 45.3px !important;
   line-height: 1.04 !important;
   letter-spacing: -0.453px !important;
-  color: #162850 !important;
+  color: #ffffff !important;
   margin: 0 !important;
   font-weight: 400 !important;
 }
@@ -66,7 +66,7 @@
   font-family: 'Epilogue', sans-serif !important;
   font-size: 18.1px !important;
   line-height: 1.6 !important;
-  color: rgba(22, 40, 80, 0.7) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
   margin: 0 !important;
   font-weight: 400 !important;
 }
@@ -97,27 +97,27 @@
 
 .hero .hero-buttons a.button.primary,
 .hero-buttons .button.primary {
-  background-color: #1f9dd9 !important;
+  background-color: #22c55e !important;
   color: white !important;
 }
 
 .hero .hero-buttons a.button.primary:hover,
 .hero-buttons .button.primary:hover {
-  background-color: #1884b8 !important;
+  background-color: #16a34a !important;
   text-decoration: none !important;
 }
 
 .hero .hero-buttons a.button.secondary,
 .hero-buttons .button.secondary {
   background-color: transparent !important;
-  color: #162850 !important;
-  border: 1px solid rgba(22, 40, 80, 0.2) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
 }
 
 .hero .hero-buttons a.button.secondary:hover,
 .hero-buttons .button.secondary:hover {
-  border-color: rgba(22, 40, 80, 0.4) !important;
-  background-color: rgba(22, 40, 80, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.8) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
   text-decoration: none !important;
 }
 
