@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+/* Hide block metadata headings */
+.hero-container > div > h1,
+.hero-container > div > h2 {
+  display: none;
+}
+
 .hero {
   position: relative;
   background: #fff;
@@ -10,7 +16,7 @@
 
 .hero-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 64px;
   max-width: 1400px;
   margin: 0 auto;
@@ -43,23 +49,26 @@
   gap: 24px;
 }
 
-.hero h1 {
-  font-family: 'Epilogue', sans-serif;
-  font-size: 45.3px;
-  line-height: 1.04;
-  letter-spacing: -0.453px;
-  color: #162850;
-  margin: 0;
-  font-weight: 400;
+/* Override global heading styles */
+.hero .hero-text h1 {
+  font-family: 'Epilogue', sans-serif !important;
+  font-size: 45.3px !important;
+  line-height: 1.04 !important;
+  letter-spacing: -0.453px !important;
+  color: #162850 !important;
+  margin: 0 !important;
+  font-weight: 400 !important;
 }
 
+/* Override global paragraph styles */
+.hero .hero-text p,
 .hero-description {
-  font-family: 'Epilogue', sans-serif;
-  font-size: 18.1px;
-  line-height: 1.6;
-  color: rgba(22, 40, 80, 0.7);
-  margin: 0;
-  font-weight: 400;
+  font-family: 'Epilogue', sans-serif !important;
+  font-size: 18.1px !important;
+  line-height: 1.6 !important;
+  color: rgba(22, 40, 80, 0.7) !important;
+  margin: 0 !important;
+  font-weight: 400 !important;
 }
 
 .hero-buttons {
@@ -68,38 +77,48 @@
   margin-top: 16px;
 }
 
+/* Override global button styles with higher specificity */
+.hero .hero-buttons a.button,
 .hero-buttons .button {
-  padding: 16px 24px;
-  border-radius: 12px;
-  font-family: 'Epilogue', sans-serif;
-  font-size: 16px;
-  text-decoration: none;
+  padding: 16px 24px !important;
+  border-radius: 8px !important;
+  font-family: 'Epilogue', sans-serif !important;
+  font-size: 16px !important;
+  text-decoration: none !important;
   transition: all 0.3s ease;
   cursor: pointer;
   display: inline-block;
   text-align: center;
-  border: none;
-  font-weight: 400;
+  border: none !important;
+  font-weight: 400 !important;
+  margin: 0 !important;
+  line-height: 1.25 !important;
 }
 
+.hero .hero-buttons a.button.primary,
 .hero-buttons .button.primary {
-  background-color: #1f9dd9;
-  color: white;
+  background-color: #1f9dd9 !important;
+  color: white !important;
 }
 
+.hero .hero-buttons a.button.primary:hover,
 .hero-buttons .button.primary:hover {
-  background-color: #1884b8;
+  background-color: #1884b8 !important;
+  text-decoration: none !important;
 }
 
+.hero .hero-buttons a.button.secondary,
 .hero-buttons .button.secondary {
-  background-color: transparent;
-  color: #162850;
-  border: 1px solid rgba(22, 40, 80, 0.2);
+  background-color: transparent !important;
+  color: #162850 !important;
+  border: 1px solid rgba(22, 40, 80, 0.2) !important;
 }
 
+.hero .hero-buttons a.button.secondary:hover,
 .hero-buttons .button.secondary:hover {
-  border-color: rgba(22, 40, 80, 0.4);
-  background-color: rgba(22, 40, 80, 0.05);
+  border-color: rgba(22, 40, 80, 0.4) !important;
+  background-color: rgba(22, 40, 80, 0.05) !important;
+  text-decoration: none !important;
 }
 
 /* Tablet */
@@ -113,12 +132,13 @@
     max-width: 500px;
   }
 
-  .hero h1 {
-    font-size: 36px;
+  .hero .hero-text h1 {
+    font-size: 36px !important;
   }
 
+  .hero .hero-text p,
   .hero-description {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 
@@ -136,12 +156,13 @@
     width: 100%;
   }
 
-  .hero h1 {
-    font-size: 32px;
+  .hero .hero-text h1 {
+    font-size: 32px !important;
   }
 
+  .hero .hero-text p,
   .hero-description {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 
   .hero-buttons {
@@ -149,7 +170,8 @@
     width: 100%;
   }
 
+  .hero .hero-buttons a.button,
   .hero-buttons .button {
-    width: 100%;
+    width: 100% !important;
   }
 }
